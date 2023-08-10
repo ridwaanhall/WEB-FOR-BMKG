@@ -1,0 +1,399 @@
+{% extends 'gempa-terbaru.html' %}
+
+{% block title %}
+  {{ super() }}
+{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block preloader %}
+    <!-- Preloader 
+    <div class="preloader flex-column justify-content-center align-items-center">
+        <img class="animation__shake" src="{{ url_for('static', filename='dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
+    </div>-->
+{% endblock %}
+
+{% block navbar %}
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <!-- Messages Dropdown Menu -->
+            <!-- Notifications Dropdown Menu -->
+
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#"
+                    role="button">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.navbar -->
+{% endblock %}
+
+{% block main_sidebar_container %}
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link">
+      <img src="{{ url_for('static', filename='dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">BMKG</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="{{ url_for('static', filename='dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">ridwaanhall</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-is-opening menu-open">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fa-solid fa-earth-asia"></i>
+              <p>
+                GEMPA
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/gempa-terbaru" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gempa Terbaru</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/gempa-besar" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gempa ≥ 5 Magnitudo</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/gempa-dirasakan" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gempa Dirasakan</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fa-solid fa-cloud-sun-rain"></i>
+                <p>
+                    Prakiraan Cuaca
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="/aceh" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Aceh</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/bali" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Bali</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/bangkabelitung" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Bangka Belitung</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/banten" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Banten</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/bengkulu" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Bengkulu</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/diyogyakarta" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>DI Yogyakarta</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dkijakarta" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>DKI Jakarta</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/gorontalo" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Gorontalo</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/jambi" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Jambi</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/jawabarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Jawa Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/jawatengah" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Jawa Tengah</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/jawatimur" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Jawa Timur</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kalimantanbarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kalimantan Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kalimantanselatan" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kalimantan Selatan</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kalimantantengah" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kalimantan Tengah</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kalimantantimur" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kalimantan Timur</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kalimantanutara" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kalimantan Utara</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kepulauanriau" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Kepulauan Riau</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/lampung" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Lampung</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/maluku" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Maluku</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/malukuutara" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Maluku Utara</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/nusatenggarabarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Nusa Tenggara Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/nusatenggaratimur" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Nusa Tenggara Timur</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/papua" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Papua</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/papuabarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Papua Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/riau" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Riau</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sulawesibarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sulawesi Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sulawesiselatan" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sulawesi Selatan</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sulawesitengah" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sulawesi Tengah</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sulawesitenggara" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sulawesi Tenggara</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sulawesiutara" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sulawesi Utara</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sumaterabarat" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sumatera Barat</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sumateraselatan" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sumatera Selatan</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/sumaterautara" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Sumatera Utara</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/indonesia" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Indonesia</p>
+                    </a>
+                </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Lain-lain
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Form Pemjualan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Penjualan</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+{% endblock %}
+
+{% block content_wrapper %}
+  {{ super() }}
+{% endblock %}
+
+{% block main_footer %}
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2023 <a href="/">BMKG</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+{% endblock %}
+
+{% block control_sidebar %}
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+{% endblock %}
+
+{% block foot %}
+    {{ super() }}
+{% endblock %}

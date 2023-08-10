@@ -1,0 +1,334 @@
+Area ID: 501188
+Latitude: -7.85
+Longitude: 110.15
+Coordinate: 110.15 -7.85
+Type: land
+Region:
+Level: 1
+Description: Wates
+Domain: DI Yogyakarta
+Tags:
+
+    Parameter ID: hu
+    Parameter Description: Humidity
+    Parameter Type: hourly
+
+        Timerange Type: hourly
+        Timerange H: 0
+        Timerange Datetime: 202307030000
+
+        Timerange Type: hourly
+        Timerange H: 6
+        Timerange Datetime: 202307030600
+
+        Timerange Type: hourly
+        Timerange H: 12
+        Timerange Datetime: 202307031200
+
+        Timerange Type: hourly
+        Timerange H: 18
+        Timerange Datetime: 202307031800
+
+        Timerange Type: hourly
+        Timerange H: 24
+        Timerange Datetime: 202307040000
+
+        Timerange Type: hourly
+        Timerange H: 30
+        Timerange Datetime: 202307040600
+
+        Timerange Type: hourly
+        Timerange H: 36
+        Timerange Datetime: 202307041200
+
+        Timerange Type: hourly
+        Timerange H: 42
+        Timerange Datetime: 202307041800
+
+        Timerange Type: hourly
+        Timerange H: 48
+        Timerange Datetime: 202307050000
+
+        Timerange Type: hourly
+        Timerange H: 54
+        Timerange Datetime: 202307050600
+
+        Timerange Type: hourly
+        Timerange H: 60
+        Timerange Datetime: 202307051200
+
+        Timerange Type: hourly
+        Timerange H: 66
+        Timerange Datetime: 202307051800
+
+    Parameter ID: humax
+    Parameter Description: Max humidity
+    Parameter Type: daily
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307031200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307041200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307051200
+
+    Parameter ID: tmax
+    Parameter Description: Max temperature
+    Parameter Type: daily
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307031200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307041200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307051200
+
+    Parameter ID: humin
+    Parameter Description: Min humidity
+    Parameter Type: daily
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307031200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307041200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307051200
+
+    Parameter ID: tmin
+    Parameter Description: Min temperature
+    Parameter Type: daily
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307031200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307041200
+
+        Timerange Type: daily
+        Timerange H:
+        Timerange Datetime: 202307051200
+
+    Parameter ID: t
+    Parameter Description: Temperature
+    Parameter Type: hourly
+
+        Timerange Type: hourly
+        Timerange H: 0
+        Timerange Datetime: 202307030000
+
+        Timerange Type: hourly
+        Timerange H: 6
+        Timerange Datetime: 202307030600
+
+        Timerange Type: hourly
+        Timerange H: 12
+        Timerange Datetime: 202307031200
+
+        Timerange Type: hourly
+        Timerange H: 18
+        Timerange Datetime: 202307031800
+
+        Timerange Type: hourly
+        Timerange H: 24
+        Timerange Datetime: 202307040000
+
+        Timerange Type: hourly
+        Timerange H: 30
+        Timerange Datetime: 202307040600
+
+        Timerange Type: hourly
+        Timerange H: 36
+        Timerange Datetime: 202307041200
+
+        Timerange Type: hourly
+        Timerange H: 42
+        Timerange Datetime: 202307041800
+
+        Timerange Type: hourly
+        Timerange H: 48
+        Timerange Datetime: 202307050000
+
+        Timerange Type: hourly
+        Timerange H: 54
+        Timerange Datetime: 202307050600
+
+        Timerange Type: hourly
+        Timerange H: 60
+        Timerange Datetime: 202307051200
+
+        Timerange Type: hourly
+        Timerange H: 66
+        Timerange Datetime: 202307051800
+
+    Parameter ID: weather
+    Parameter Description: Weather
+    Parameter Type: hourly
+
+        Timerange Type: hourly
+        Timerange H: 0
+        Timerange Datetime: 202307030000
+
+        Timerange Type: hourly
+        Timerange H: 6
+        Timerange Datetime: 202307030600
+
+        Timerange Type: hourly
+        Timerange H: 12
+        Timerange Datetime: 202307031200
+
+        Timerange Type: hourly
+        Timerange H: 18
+        Timerange Datetime: 202307031800
+
+        Timerange Type: hourly
+        Timerange H: 24
+        Timerange Datetime: 202307040000
+
+        Timerange Type: hourly
+        Timerange H: 30
+        Timerange Datetime: 202307040600
+
+        Timerange Type: hourly
+        Timerange H: 36
+        Timerange Datetime: 202307041200
+
+        Timerange Type: hourly
+        Timerange H: 42
+        Timerange Datetime: 202307041800
+
+        Timerange Type: hourly
+        Timerange H: 48
+        Timerange Datetime: 202307050000
+
+        Timerange Type: hourly
+        Timerange H: 54
+        Timerange Datetime: 202307050600
+
+        Timerange Type: hourly
+        Timerange H: 60
+        Timerange Datetime: 202307051200
+
+        Timerange Type: hourly
+        Timerange H: 66
+        Timerange Datetime: 202307051800
+
+    Parameter ID: wd
+    Parameter Description: Wind direction
+    Parameter Type: hourly
+
+        Timerange Type: hourly
+        Timerange H: 0
+        Timerange Datetime: 202307030000
+
+        Timerange Type: hourly
+        Timerange H: 6
+        Timerange Datetime: 202307030600
+
+        Timerange Type: hourly
+        Timerange H: 12
+        Timerange Datetime: 202307031200
+
+        Timerange Type: hourly
+        Timerange H: 18
+        Timerange Datetime: 202307031800
+
+        Timerange Type: hourly
+        Timerange H: 24
+        Timerange Datetime: 202307040000
+
+        Timerange Type: hourly
+        Timerange H: 30
+        Timerange Datetime: 202307040600
+
+        Timerange Type: hourly
+        Timerange H: 36
+        Timerange Datetime: 202307041200
+
+        Timerange Type: hourly
+        Timerange H: 42
+        Timerange Datetime: 202307041800
+
+        Timerange Type: hourly
+        Timerange H: 48
+        Timerange Datetime: 202307050000
+
+        Timerange Type: hourly
+        Timerange H: 54
+        Timerange Datetime: 202307050600
+
+        Timerange Type: hourly
+        Timerange H: 60
+        Timerange Datetime: 202307051200
+
+        Timerange Type: hourly
+        Timerange H: 66
+        Timerange Datetime: 202307051800
+
+    Parameter ID: ws
+    Parameter Description: Wind speed
+    Parameter Type: hourly
+
+        Timerange Type: hourly
+        Timerange H: 0
+        Timerange Datetime: 202307030000
+
+        Timerange Type: hourly
+        Timerange H: 6
+        Timerange Datetime: 202307030600
+
+        Timerange Type: hourly
+        Timerange H: 12
+        Timerange Datetime: 202307031200
+
+        Timerange Type: hourly
+        Timerange H: 18
+        Timerange Datetime: 202307031800
+
+        Timerange Type: hourly
+        Timerange H: 24
+        Timerange Datetime: 202307040000
+
+        Timerange Type: hourly
+        Timerange H: 30
+        Timerange Datetime: 202307040600
+
+        Timerange Type: hourly
+        Timerange H: 36
+        Timerange Datetime: 202307041200
+
+        Timerange Type: hourly
+        Timerange H: 42
+        Timerange Datetime: 202307041800
+
+        Timerange Type: hourly
+        Timerange H: 48
+        Timerange Datetime: 202307050000
+
+        Timerange Type: hourly
+        Timerange H: 54
+        Timerange Datetime: 202307050600
+
+        Timerange Type: hourly
+        Timerange H: 60
+        Timerange Datetime: 202307051200
+
+        Timerange Type: hourly
+        Timerange H: 66
+        Timerange Datetime: 202307051800

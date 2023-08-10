@@ -1,0 +1,8 @@
+def parse_weather_data():
+
+    response = requests.get(url)
+
+    data = xmltodict.parse(response.text)
+
+def cuaca_diyogyakarta():
+    url = 'https://data.bmkg.go.id/DataMKG/MEWS/DigitalForecast/DigitalForecast-DIYogyakarta.xml'
